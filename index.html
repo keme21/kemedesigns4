@@ -70,6 +70,13 @@ nav ul li a.active {
     color: black; /* Sample hover and active link color */
 }
 
+@media (min-width: 769px) {
+.content p {
+    padding-left: 3% !important;
+    padding-right: 3% !important;  
+    } 
+    }
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -98,6 +105,8 @@ nav ul li a.active {
     header {
         flex-direction: column;
     }
+
+
 }
 
 
@@ -142,8 +151,7 @@ margin: 0 auto;
     margin-bottom: 10px; /* Adds space between list items */
 }
 .content p {
-    padding-left: 8%;
-    padding-right: 8%;
+   
     line-height: 3.0rem; /* Adjust line height for better readability */
     /* Adds space between list items */
     text-align: left;
