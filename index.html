@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keme Rex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+       
+        /* Responsive navigation styles */
+@media (max-width: 768px) {
+   
+#banner h1 { font-size: 1.5rem; }
+
+.next img {
+    width: 200px !important;
+}
+header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding-top: 20px;
+    }
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5px 5%;
+    background-color: white; /* Light gray background */
+
+}
+
+header h1 {
+    color: black; /* Sample color for the title */
+    font-size: 2.5rem;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    color: black; /* Adjust based on your header color */
+    font-size: 2rem;
+    user-select: none;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding-left: 20px;
+}
+
+nav ul li a {
+    color: grey; /* Default link color */
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: black; /* Sample hover and active link color */
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+       
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: ;
+        margin-right: 40px;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0; /* Adjust based on your design */
+    }
+
+    /* Additional responsive styling */
+    header {
+        flex-direction: column;
+    }
+}
+
+
+
+
+#banner { min-width: 90%; 
+margin: none;
+margin: 0 auto;
+}
+
+
+
+
+
+#banner {
+            background:  no-repeat center center/cover;
+            background-color: #46166b;
+            color: #eeb211;
+            text-align: center;
+            padding:  5px;
+            font-size: 1.5rem;
+            max-width: 35%;
+            margin: 0 auto;
+           
+            margin-top: 30px;
+        }
+        .content {
+            text-align: center;
+            padding: 50px;  
+       
+        }
+        .content ul {
+     /* Removes the default list styling */
+    padding: 0;
+    margin: 0 auto; /* Centers the list */
+    text-align: left; /* Aligns the text to the left */
+    max-width: 600px; /* Adjust this value as needed to fit the content */
+}
+
+.content li {
+    line-height: 3.0rem; /* Adjust line height for better readability */
+    margin-bottom: 10px; /* Adds space between list items */
+}
+.content p {
+    padding-left: 8%;
+    padding-right: 8%;
+    line-height: 3.0rem; /* Adjust line height for better readability */
+    /* Adds space between list items */
+    text-align: left;
+
+}
+     
+        .content h1 {
+            margin-bottom: 30px;
+        color: #46166b;
+        }
+        .content h2 { text-align: center;
+        
+        }
+        .content img {
+            max-width: 55%;
+            height: auto;
+        }
+        .next {
+    text-align: center; /* Centers the text and image */
+    margin: 20px 0; /* Adds space above and below the image and text */
+}
+.next p{
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 3.0rem; /* Adjust line height for better readability */
+    /* Adds space between list items */
+    text-align: left;
+
+ }  
+.next img {
+    width: 100%; /* Adjust the width as necessary, or set to auto */
+    height: auto; /* Keeps the aspect ratio of the image */
+    max-width: 600px; /* Limits the size of the image */
+    margin: 0 auto; /* Centers the image */
+}
+
+.next li {line-height: 3.0rem; /* Adjust line height for better readability */
+    margin-bottom: 10px; /* Adds space between list items */}
+   
+.next ul {
+    padding: 0;
+    margin: 0 auto; /* Centers the list */
+    text-align: left; /* Aligns the text to the left */
+    max-width: 600px; /* Adjust this value as needed to fit the content */ /* Adds space between the image and the text */
+}
+.free {margin-top: 70px; 
+
+
+}
+.free h3 {
+    margin-top: 5%;
+    margin-left: 9%;
+    font-family: Italic;
+}
+.free p { text-align: center;
+color:#C51A4A}       
+
+.free ul {
+     /* Removes the default list styling */
+    padding: 0;
+    margin: 0 auto; /* Centers the list */
+    text-align: left; /* Aligns the text to the left */
+    margin-left: 10%; /* Adjust this value as needed to fit the content */
+}
+.free li {line-height: 3.0rem; /* Adjust line height for better readability */
+    margin-bottom: 10px; /* Adds space between list items */
+    font-style: Italic;
+    }
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Keme Rex</h1>
+       
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+<nav>
+    <ul id="nav-menu">
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="https://www.linkedin.com/in/keme-rex-19929a179/">Connect</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+    </header>
+    <section id="banner">
+        <h1> Uniform Design</h1>
+        
+    </section>
+    <main class="content">
+        <h1>CEHC Tech based Community Support Internship</h1>
+        <!-- Placeholder for the image, since no image is actually provided -->
+        <img src="CEHC1.png" alt="Project Image">
+        <h2>Who are we? </h2>
+        <p>
+            As a team Our role during the course of the internship at the Makerspace was to come together, be creative and use our creativity to help and make the world a better place. In the dynamic and ever-evolving field of technology, practical experience stands as a cornerstone of learning and development. My recent internship, undertaken at a cutting-edge maker space, embodies this philosophy through its commitment to community support and technological advancement. Serving both the maker space and my school, this tech-based internship offered me a unique opportunity to immerse myself in the practical aspects of technology application, event management, and community engagement.
+        </p>
+        <img src="CEHC3.png" alt="Project Image">
+        <!-- Your text goes here -->
+    </main>
+    
+    <div class="next">
+        <img src="CEHC2.png" alt="Descriptive Text for the Image">
+        <h2>How we designed the T-shirt</h2>
+        <p>
+         We designed the T-shirt using Cricut Design Space on the computer. It was not relatively hard to think about what our design to be, we needed something to represent our School, so we used our School's colors which is purple and Gold. we used Purple for the background and Yellow for the text for good contrasting. When you saw us at events or at the Makerspace, you could'nt miss us. Our School Faculty Was very impressed with this simple design that helped us represent the Makerspace. Our School Faculty Was very Impressed by it
+        </p>
+    </div>
+   <div class="free">
+   <h3>Materials Used</h3>
+   <ul>
+    <li>A Computer</li>
+    <li>Cricut Design Space</li>
+    <li>Cricut Auto Press</li>
+    <li>Black Purple Tshirt</li>
+</ul>
+</div>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("nav-menu");
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
